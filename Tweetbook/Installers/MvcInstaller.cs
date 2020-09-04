@@ -42,6 +42,7 @@ namespace Tweetbook.Installers
                         ValidateIssuerSigningKey = true,
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtsettings.Secret)),
                         ValidateIssuer = false,
+                        ValidateAudience = false,
                         RequireExpirationTime = false,
                         ValidateLifetime = true
                     };
